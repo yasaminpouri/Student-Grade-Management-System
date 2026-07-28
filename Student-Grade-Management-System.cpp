@@ -77,58 +77,58 @@ int main()
             break;
         case 3:
         { 
-        cout << "Enter the name : \n";
-        cin.ignore();
-        getline(cin, searchName);
-        bool found = false;
-        for (int i = 0; i < count; i++)
-        {
-            
-            if (searchName == student[i].name)
+            cout << "Enter the name : \n";
+            cin.ignore();
+            getline(cin, searchName);
+            bool found = false;
+            for (int i = 0; i < count; i++)
             {
-                found = true;
-                cout << student[i].name << '\n';
-                cout << student[i].studentId << '\n';
-                cout << student[i].gpa << '\n';
-                break;
-            }
             
-        }
-        if (!found)
-        {
-            cout << "not found!\n";
-        }
+                if (searchName == student[i].name)
+                {
+                    found = true;
+                    cout << student[i].name << '\n';
+                    cout << student[i].studentId << '\n';
+                    cout << student[i].gpa << '\n';
+                    break;
+                }
+            
+                }
+            if (!found)
+            {
+                cout << "not found!\n";
+            }
         }
         
             break;
         case 4:
         {
-        cout << "Enter the name : \n";
-        cin.ignore();
-        getline(cin, searchName);
-        bool found = false;
-        for (int i = 0; i < count; i++)
-        {
+            cout << "Enter the name : \n";
+            cin.ignore();
+            getline(cin, searchName);
+            bool found = false;
+            for (int i = 0; i < count; i++)
+            {
             
-            if (searchName == student[i].name)
-            { 
-                found = true;
-                cout << "===== Edit Student =====\n";
-                cout << "1. Edit Name \n";
-                cout << "2. Edit Student ID \n";
-                cout << "3. Edit GPA \n";
-                cout << "4. Edit All Information\n";
-                cout << "========================\n";
-                cout << "Enter your choice : \n";
-                int yourChoice;
-                cin >> yourChoice;
-                switch (yourChoice)
+                if (searchName == student[i].name)
+                { 
+                    found = true;
+                    cout << "===== Edit Student =====\n";
+                    cout << "1. Edit Name \n";
+                    cout << "2. Edit Student ID \n";
+                    cout << "3. Edit GPA \n";
+                    cout << "4. Edit All Information\n";
+                    cout << "========================\n";
+                    cout << "Enter your choice : \n";
+                    int yourChoice;
+                    cin >> yourChoice;
+                    switch (yourChoice)
                 {
                 case 1:
                 {
-                   cout << "Enter the name : ";
-                   cin.ignore();
-                   getline(cin, student[i].name);
+                    cout << "Enter the name : ";
+                    cin.ignore();
+                    getline(cin, student[i].name);
                 }
                     break;
                 case 2:
@@ -166,40 +166,40 @@ int main()
             }
             
         }
-        if (!found)
-        {
-            cout << "not found!\n";
-        }
+            if (!found)
+            {
+                cout << "not found!\n";
+            }
     
         }
 
             break;
         case 5:
         { 
-        cout << "Enter the name : \n";
-        cin.ignore();
-        getline(cin, searchName);
-        bool found = false;
-        for (int i = 0; i < count; i++)
-        {
+            cout << "Enter the name : \n";
+            cin.ignore();
+            getline(cin, searchName);
+            bool found = false;
+            for (int i = 0; i < count; i++)
+            {
             
-            if (searchName == student[i].name)
-            {
-                found = true;
-            for (int j = i; j < count - 1; j++)
-            {
-                student[j] = student[j + 1];
-            }
-            --count;
-            cout << "Student deleted successfully!\n";
+                if (searchName == student[i].name)
+                {
+                    found = true;
+                for (int j = i; j < count - 1; j++)
+                {
+                    student[j] = student[j + 1];
+                }
+                --count;
+                cout << "Student deleted successfully!\n";
                 break;
-            }
+                }
             
-        }
-        if (!found)
-        {
-            cout << "not found!\n";
-        }
+            }
+            if (!found)
+            {
+                cout << "not found!\n";
+            }
 
         }
 
@@ -209,7 +209,7 @@ int main()
             break;
 
         default:
-        cout << "Please enter a number between 1 and 6! \n";
+            cout << "Please enter a number between 1 and 6! \n";
             break;
         }
 
